@@ -4,32 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/04836a4faf.js" crossorigin="anonymous"></script>
     <title>Art.elares</title>
-    <link rel="shortcut icon" href="../img/telaricon.jpg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="img/telaricon.jpg">
 </head>
 <body>
-    <nav>
-        <a href="../index.html">
-            <h2>ART.elares</h2>
+    <nav class="navbar">
+        <a href="../index.html" class="bar">
+            <h1>ART.elares</h1>
         </a>
-        <ul>
-            <li>
-                <a href="../views/primavera.html">Primavera</a>
-            </li>
-            <li>
-                <a href="../views/verano.html">Verano</a>
-            </li>
-            <li>
-                <a href="../views/otonio.html">Otoño</a>
-            </li>
-            <li>
-                <a href="../views/invierno.html">Invierno</a>
-            </li>
-            <br>
-            <li>
-                <a href="../views/contacto.html">Contacto</a>
-            </li>
-        </ul>
+        <!-- <input type="" id="toggler"> -->
+        <label for="toggler"><i class="ri-menu-line"></i></label>
+        <div class="menu">
+            <ul class="list">
+                <li><a href="../views/primavera.html">Primavera</a></li>
+                <li><a href="../views/verano.html">Verano</a></li>
+                <li><a href="../views/otonio.html">Otoño</a></li>
+                <li><a href="../views/invierno.html">Invierno</a></li>
+                <li><a href="../views/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
         <!-- ends listas -->
     </nav>
     <!-- ends nav -->
@@ -39,49 +35,60 @@
         <section></section>
         <!-- welcome page -->
         <section>
-            <form action="envio.py">
-                <fieldset>
+            <form class="contacto-form" action="envio.py">
+                <fieldset >
                         <legend>Info personal</legend>
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre"  placeholder="Leo Magazine" required>
-                        <br>
-                        <br>
                         <label for="correo">Correo:</label>
                         <input type="text" id="correo"  placeholder="correo@email.com" required>
-                        <br>
-                        <br>
                         <label for="chat">Whatsapp:</label>
                         <input type="text" id="chat"  placeholder="Whatsapp numero" required>
-                        <br>
                     <fieldset>
-                        <br>
+                        
                         <legend>Medio para contactarte</legend>
                         <label for="chat">Whatsapp</label>
                         <input type="radio" id="chat" value="chat" name="contacto">
-                        <br>
+                        
                         <label for="correo">Correo electrónico</label>
                         <input type="radio" id="correo" value="correo" name="contacto">
-                        <br>
+                        
                     </fieldset>
                 </fieldset>
         </section>
         <!-- ends section imagenes -->
         <section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.497727807916!2d-103.48374228458152!3d20.526806410098743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842f54ee1ee341db%3A0x78fe033437d8640!2sAdamar!5e0!3m2!1ses-419!2smx!4v1654218200440!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="container-left">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.497727807916!2d-103.48374228458152!3d20.526806410098743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842f54ee1ee341db%3A0x78fe033437d8640!2sAdamar!5e0!3m2!1ses-419!2smx!4v1654218200440!5m2!1ses-419!2smx" width="150" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>   
         </section>
         <!-- ends maps -->
     </main>
     <footer>
-        <a href="https://www.facebook.com/">
-            <img src="../img/facebook.jpg" alt="Facebooklogo" target="_blank">
-        </a>
-        <a href="https://www.instagram.com/">
-            <img src="../img/instagram.jpg" alt="logo instagram" target="_blank">
-        </a>
-        <a href="https://www.twitter.com/">
-            <img src="../img/twitter.jpg" alt="logo twitter" target="_blank">
-        </a>
+        <ul class="social-icons">
+            <li>
+                <a href="https://instagram.com/" id="item" target="_blank">
+                    <i class="fa fa-instagram" target="_blank"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+            <li><a href="https://facebook.com" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li><a href="https://whatsapp.com" target="_blank">
+                    <i class="fa fa-whatsapp"></i>
+                </a>
+            </li>
+        </ul>
     </footer>
     <!--ends pie-->
+</body>
 </body>
 </html>
