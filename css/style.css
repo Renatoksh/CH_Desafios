@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    /* box-sizing: border-box; */
+    background-color: #bad3e4;
 }
 
 html{
@@ -14,7 +14,6 @@ html{
 
 body {
     overflow: hidden;
-    background-color: #bad3e4;
     background-attachment: fixed;
     place-items: center; 
 }
@@ -26,17 +25,17 @@ h1,h5 {
 
 h2{
     color: #ffffff;
-    font-size: 3.5rem;
+    font-size: 2rem;
 }
 
 h3{
     color: #ffffff;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 
-h4 {
+.two h3 {
     color: #d09b9b;
-    font-size:2.5rem;
+    font-size:1.5rem;
 }
 
 /* starts header */
@@ -46,7 +45,6 @@ h4 {
 }
 
     nav {
-        font-size:1.2rem;
         /* position */
         position:sticky;
         width: 85%;
@@ -72,18 +70,13 @@ h4 {
         align-items: flex-end;
     }
 
-    .navbar li:hover {
-        color:rgb(99, 99, 99);
-        font-size:1.2rem;
+    .navbar li a:hover {
         border-radius: 5px;
         background: white;
+        color:rgb(99, 99, 99);
     }
 
-    .bar:hover {
-        font-size:1.2rem;
-        border-radius: 5px;
-        background: rgb(99, 99, 99);
-    }
+
 
 /* ends header */
 
@@ -101,8 +94,8 @@ h4 {
 
     /* starts Carrusel */
     .container {
-        background-color: #bad3e4;
-        padding: 20px 40px;
+        /* background-color: #bad3e4; */
+        padding: auto;
         border-radius: 5px;
         color: #fff;
         display: flex;
@@ -120,13 +113,11 @@ h4 {
     }
     
     #contItemsCarrusel {
-        /* border: 5px solid black; */
         height: 200px;
         overflow: hidden;
     }
     
     .itemCarrusel {
-        /* border: 1px solid black; */
         height: 200px;
         position: relative;
         display: flex;
@@ -199,13 +190,13 @@ h4 {
     }
 
     .form-control input {
-        background: transparent;
+        background-color: transparent;
         border: 0;
-        border-bottom: 2px #fff solid;
+        border-bottom: 1px #fff solid;
         display: block;
         width: 100%;
         font-size: 1rem;
-        color: #fff;
+        color: rgb(99, 99, 99);
     }
 
     .form-control input:focus,
@@ -235,17 +226,20 @@ h4 {
         width: 100%;
         background: #bad3e4;
         font-family: inherit;
-        font-size:2rem;
+        font-size:1rem;
         border: 0;
         border-radius: 5px;
     }
     
     .btn:hover {
         color:rgb(99, 99, 99);
-        font-size:2rem;
+        font-size:1rem;
         border-radius: 5px;
         background: white;
+        margin-left: 20px;
     }
+
+
 
 /* ends form */
 
@@ -267,6 +261,53 @@ h4 {
         text-decoration: none;
         color: white;
     }
+
+    .four p {
+            animation-duration: 3s;
+            animation-name: slidein;
+          }
+          
+          @keyframes slidein {
+            from {
+              margin-bottom: 100%;
+              width: 300%
+            }
+          
+            to {
+              margin-top: 40%;
+              width: 90%;
+            }
+
+            75% {
+                font-size: 500%;
+                margin-top: 50%;
+                width: 190%;
+              }
+          }
+
+          .four .map {
+            animation-duration: 3s;
+            animation-name: slidein;
+          }
+          
+          @keyframes slidein {
+            from {
+              margin-bottom: 80%;
+              width: 300%
+            }
+          
+            to {
+              margin-top: 10%;
+              width: 90%;
+            }
+
+            75% {
+                font-size: 400%;
+                margin-top: 30%;
+                width: 150%;
+              }
+          }
+      
 
     .cuenta {
         margin-top: 5px;
@@ -390,7 +431,7 @@ header {
             display:none;
         }
 
-@media (min-width: 768px) {
+@media (min-width: 1006px) {
     #container-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 10vh 80vh 10vh;
