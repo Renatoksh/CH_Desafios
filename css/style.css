@@ -76,10 +76,7 @@ h3{
         color:rgb(99, 99, 99);
     }
 
-
-
 /* ends header */
-
 
 /* starts welcome page */
 .two {
@@ -91,10 +88,8 @@ h3{
     justify-content: center;
 }
 
-
     /* starts Carrusel */
     .container {
-        /* background-color: #bad3e4; */
         padding: auto;
         border-radius: 5px;
         color: #fff;
@@ -142,11 +137,6 @@ h3{
     
     /* endss Carrusel */
 
-    /* form {
-        width: 700px;
-
-    } */
-
     form {
         color: rgb(99, 99, 99);
         font-size: 1rem;
@@ -165,13 +155,10 @@ h3{
         justify-content:center;
     }
 
-
 /* ends welcome page */
 
 /* start form */
-
 .three {
-    /* background-color: lightblue; */
     grid-area: three;
     display: flex;
     flex-direction: column;
@@ -239,15 +226,10 @@ h3{
         margin-left: 20px;
     }
 
-
-
 /* ends form */
-
-
 
 /* starts account */
 .four {
-    /* background-color: blueviolet; */
     grid-area: four;
     display: flex;
     flex-direction: column;
@@ -307,14 +289,13 @@ h3{
                 width: 150%;
               }
           }
-      
 
-    .cuenta {
+        .cuenta {
         margin-top: 5px;
         font-size: 1.5rem;
         text-decoration: none;
         color: grey;
-    }
+        }
     .cuenta:hover {
         color:rgb(99, 99, 99);
         font-size:1.5rem;
@@ -334,11 +315,7 @@ h3{
         display: flex;
         align-items: flex-start;
     }
-
 /* ends account */
-
-
-
 
 
 /* starts Social Icons */
@@ -377,7 +354,6 @@ h3{
     .social-icons a i:hover{
         color: rgb(99, 99, 99);
     }
-
 
 /* ends Social Icons */
 
@@ -494,6 +470,5 @@ header {
         "five five five";
     }
 }
-
 
 /* ends grid */
