@@ -1,0 +1,54 @@
+.three {
+    background-color: $mainColor;
+    grid-area: three;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .container {
+        h5 {
+            color:$white;
+            font-size: $textLg;
+            font-weight: $bold;
+            margin: 20px;
+        }
+        form {
+            div {
+                position: relative;
+                margin: 20px;
+                width: 300px;
+                input {
+                    background-color: transparent;
+                    border: 0;
+                    display: block;
+                    width: 100%;
+                    font-size: $textMd;
+                    color: $black;
+                    &:focus {
+                        outline: 0;
+                        border-bottom-color: rgb(99, 99, 99);
+                    }
+                    &:valid {
+                        outline: 0;
+                        border-bottom-color: rgb(99, 99, 99);
+                    }
+                }
+            }
+            button {
+                margin: 20px 20px;
+                cursor: pointer;
+                color:$white;
+                display: inline-block;
+                background: $mainColor;
+                font-family: inherit;
+                font-size:$textMd;
+                border: 0;
+                &:hover{
+                    color:$black;
+                    font-size:$textMd;
+                    background: $white;
+                }
+            }
+        }
+    }
+}

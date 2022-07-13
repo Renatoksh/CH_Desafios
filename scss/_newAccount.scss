@@ -1,0 +1,74 @@
+.four {
+    background-color: $mainColor;
+    grid-area: four;
+    color: $white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    p {
+        margin: 20px;
+        animation-duration: 3s;
+        animation-name: slidein;
+    }
+        @keyframes slidein {
+            from {
+              margin-bottom: 100%;
+              width: 300%
+            }
+          
+            to {
+              margin-top: 40%;
+              width: 90%;
+            }
+
+            75% {
+                font-size: 500%;
+                margin-top: 50%;
+                width: 190%;
+              }
+        }
+    .map {
+        animation-duration: 3s;
+        animation-name: slidein;
+    }
+    @keyframes slidein {
+        from {
+          margin-bottom: 80%;
+          width: 300%
+        }
+      
+        to {
+          margin-top: 10%;
+          width: 90%;
+        }
+
+        75% {
+            font-size: 400%;
+            margin-top: 30%;
+            width: 150%;
+          }        
+    }
+    a {
+        margin-top: 5px;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: $keyColor;
+        &:hover {
+            color:$keyColor;
+            font-size:1.5rem;
+            border-radius: 5px;
+            background: $white;
+        }
+    }
+
+    .container-left {
+        display:flex;
+        flex-direction: row;
+        justify-content: center; 
+        .map {
+            display: flex;
+            align-items: flex-start;
+        }
+    }
+}

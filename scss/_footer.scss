@@ -1,0 +1,27 @@
+.five{
+    grid-area: five;
+    background-color: $mainColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    li {
+        display: inline-block;
+        position: relative;
+        font-size: $textLg;
+        i {
+            color:$whiteIcons;
+            position: relative;
+            &:hover{
+                color:$black;
+                a::before{
+                    content: " ";
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+}

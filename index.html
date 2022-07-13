@@ -15,37 +15,52 @@
 <body>
     <div id="container-grid">
         <!-- starts navbar -->
-        <header class="one">   
-            <nav class="button">
-                <a href="../index.html" class="bar">
-                    <h1>ART.elares</h1>
-                </a>
-                <label for="toggler"><i class="ri-menu-line"></i></label>
-                <ul class="navbar">
-                    <li>
-                      <a href="../views/primavera.html">Primavera</a>
-                    </li>
-                    <li>
-                      <a href="/views/verano.html">Verano</a>
-                    </li>
-                    <li>
-                      <a href="/views/otonio.html">Otoño</a>
-                    </li>
-                    <li>
-                        <a href="/views/invierno.html">Invierno</a>
-                    </li>
-                    <li>
-                        <a href="/views/contacto.html">Contacto</a>
-                    </li>
-                  </ul>
-            </nav>
+        <header class="one">
+            <nav class="navbar fixed-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html">ART.elares</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon">Telares aquí</span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ART.elares</h5>
+                      <button type="button" class="btn-close bg-primary" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Galería
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                            <li><a class="dropdown-item" href="../views/primavera.html">Primavera</a></li>
+                            <li><a class="dropdown-item" href="/views/verano.html">Verano</a></li>
+                            <li><a class="dropdown-item" href="/views/otonio.html">Otoño</a></li>
+                            <li><a class="dropdown-item" href="/views/invierno.html">Invierno</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/views/contacto.html">Contacto</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
         </header>
         <!-- ends navbar -->
         <!-- ends header -->
-        <main class="two">
-            <h3><span class="new text-sm-start"> > Works</span></h3>
-            <h1 class="text-sm-start">Bienvenidos</h1>
-            <h1 class="text-sm-start">E-Telares</h1>
+        <main class="two"> 
+            <div>
+                <h3><span class="new text-sm-start"> > Works</span></h3>
+                <h1 class="text-sm-start">Bienvenidos</h1>
+                <h1 class="text-sm-start">E-Telares</h1>
+            </div>
         </main>
         <!-- welcome page -->
         </main>

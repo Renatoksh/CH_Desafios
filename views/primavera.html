@@ -15,29 +15,42 @@
 <body>
     <div id="container-grid">
             <header class="one">
-                <nav class="button">
-                    <a href="../index.html" class="bar">
-                        <h1>ART.elares</h1>
-                    </a>
-                    <label for="toggler"><i class="ri-menu-line"></i></label>
-                    <ul class="navbar">
-                        <li>
-                          <a href="../views/primavera.html">Primavera</a>
-                        </li>
-                        <li>
-                          <a href="../views/verano.html">Verano</a>
-                        </li>
-                        <li>
-                          <a href="../views/otonio.html">Otoño</a>
-                        </li>
-                        <li>
-                            <a href="../views/invierno.html">Invierno</a>
-                        </li>
-                        <li>
-                            <a href="../views/contacto.html">Contacto</a>
-                        </li>
-                      </ul>
-                </nav>
+                <nav class="navbar fixed-top">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="../index.html">ART.elares</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon">Telares aquí</span>
+                      </button>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ART.elares</h5>
+                          <button type="button" class="btn-close bg-primary" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                              <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Galería
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="../views/primavera.html">Primavera</a></li>
+                                <li><a class="dropdown-item" href="/views/verano.html">Verano</a></li>
+                                <li><a class="dropdown-item" href="/views/otonio.html">Otoño</a></li>
+                                <li><a class="dropdown-item" href="/views/invierno.html">Invierno</a></li>
+                                <li>
+                                  <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="/views/contacto.html">Contacto</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
             </header>
         <!-- ends listas -->
     <!-- ends nav -->
@@ -111,21 +124,21 @@
         <!-- ends section imagenes -->
         <section class="three">
             <div class="container-right">
+            <!-- login bootstrap-->
+            <div class="container">
                 <h5>Iniciar Sesión</h5>
-                    <form>
-                        <div class="form-control">
-                            <input type="text" required placeholder="Escribe tú correo">
-                            </input>
-                        </div>
-                        <div class="form-control">
+                <form>
+                    <div class="form-control">
+                        <input type="text" required placeholder="Escribe tú correo">
+                        </input>
+                    </div>
+                    <div class="form-control">
                         <input type="password" required placeholder="Escribe tú contraseña">
-                            </input>
-                        </div>
-                        <button class="btn">Enviar</button>
-                        <p class="text">Cuenta no registrada
-                            <a href="#" class="cuenta">Crear cuenta nueva</a>
-                        </p>
-                    </form>
+                        </input>
+                    </div>
+                    <button class="btn">Enviar</button>
+                </form>
+            </div>
             </div>
         </section>
                 <!-- starts maps -->

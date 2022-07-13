@@ -1,0 +1,35 @@
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background-color: $mainColor;
+}
+
+body {
+    overflow: hidden;
+    background-attachment: fixed;
+    place-items: center; 
+}
+
+html{
+    font-size: 100%;
+}
+
+h1,h5 {
+    font-family: $secondaryFont;
+    color: $keyColor;
+    color: $white;
+    font-size: $textMd;
+}
+
+h2{
+    color: $white;
+    font-size: $textMd;
+}
+
+h3{
+    color: $white;
+    font-size: 2.5rem;
+}
+

@@ -1,0 +1,87 @@
+// grid one - navbar
+ .one {
+
+    .navbar-brand {
+        color: $black;
+        font-size: $textX1;
+        &:hover {
+            color: $white;
+        }
+    }
+    .navbar-toggler {
+        background-color: $white;
+        width:100px;
+        margin-right: 50px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        &:hover {
+            color: $white;
+            background-color: $keyColor;
+        }
+    }
+    .navbar-toggler-icon {
+        background-color: $white;
+        font-size: $textSm;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        &:hover {
+            color: $white;
+            background-color: $keyColor;
+        }
+    }
+
+    h5 {
+        font-weight: $bold;
+    }
+
+    a {
+        color: $black;
+        font-size: $textMd;
+        font-weight: $bold;
+        font-family: $secondaryFont;
+        &:hover{
+            color: $white;
+            background-color: transparent;
+        }
+    }
+
+    // .button {
+    //     background-color: $mainColor;
+    //     grid-area: one;
+    //     padding: 5px 20px;
+    //     color: $black;
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     a {
+    //         display: flex;
+    //         text-decoration: none;
+    //         color: $black; 
+    //     }
+    //     ul {
+    //         display: flex;
+    //         flex-wrap: wrap;
+    //         li {
+    //             list-style: none;
+    //             margin-right: 20px;
+    //         }
+    //         a {
+    //             font-family: $secondaryFont;
+    //             font-size: $textNav;
+    //             text-decoration: none;
+    //             color:$black;
+    //             font-weight:$bold;
+    //             &:hover {
+    //                 border-radius: 5px;
+    //                 background-color:$white;
+    //                 color:$keyColor;
+    //             }
+    //         }
+    //     }
+    // }
+
+    }
