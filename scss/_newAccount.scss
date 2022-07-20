@@ -1,14 +1,18 @@
 .four {
-    background-color: $mainColor;
+    background-color: transparent;
     grid-area: four;
     color: $white;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    div {
+      background-color: transparent;
+      position: left;
+    }
     p {
         margin: 20px;
-        animation-duration: 3s;
+        animation-duration: 2s;
         animation-name: slidein;
     }
         @keyframes slidein {
